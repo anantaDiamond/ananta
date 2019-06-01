@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+	<var name="xform" class="th.co.ananta.x.web.secure.search.SearchForm" />
+	<on-start>
+		<evaluate expression="searchCtl.initializeForm(flowRequestContext,messageContext,xform)" />
+	</on-start>
+	<view-state id="site.search.search" view="site.search.search" model="xform">
+		<transition on="next" to="search" bind="true" validate="true">
+			<evaluate expression="searchCtl.validateSearchCondition(flowRequestContext,messageContext,xform)" />
+		</transition>
+	</view-state>
+	<action-state id="search">
+		<evaluate expression="searchCtl.search(flowRequestContext,messageContext,xform)" />
+		<transition on="success" to="site.search.result" />
+		<transition on-exception="th.co.ananta.x.web.base.XException" to="site.search.search">
+			<evaluate expression="searchCtl.exception(messageContext, flashScope.rootCauseException)" />
+		</transition>
+	</action-state>
+	<view-state id="site.search.result" view="site.search.result" model="xform">
+		<transition on="next" to="confirm" bind="true" validate="true">
+			<evaluate expression="searchCtl.validateSearchResult(flowRequestContext,messageContext,xform)" />
+		</transition>
+		<transition on="back" to="site.search.search" bind="true" >
+			<evaluate expression="searchCtl.initializeForm(flowRequestContext,messageContext,xform)" />
+		</transition>
+	</view-state>
+	<action-state id="delete">
+		<evaluate expression="searchCtl.delete(flowRequestContext,messageContext,xform)" />
+		<transition on="success" to="site.search.confirmForm" />
+		<transition on="fail" to="site.search.confirmForm" />
+		<transition on-exception="th.co.ananta.x.web.base.XException" to="site.search.confirmForm">
+			<evaluate expression="searchCtl.exception(messageContext, flashScope.rootCauseException)" />
+		</transition>
+	</action-state>
+	<action-state id="confirm">
+		<evaluate expression="searchCtl.confirm(flowRequestContext,messageContext,xform)" />
+		<transition on="success" to="site.search.confirmForm" />
+		<transition on-exception="th.co.ananta.x.web.base.XException" to="site.search.result">
+			<evaluate expression="searchCtl.exception(messageContext, flashScope.rootCauseException)" />
+		</transition>
+	</action-state>
+	<view-state id="site.search.confirmForm" view="site.search.confirmForm" model="xform">
+		<transition on="next" to="submit" bind="true" validate="true">
+			<evaluate expression="searchCtl.validateConfirmForm(flowRequestContext,messageContext,xform)" />
+		</transition>
+		<transition on="delete" to="delete" bind="true" />
+	</view-state>
+	<action-state id="submit">
+		<evaluate expression="searchCtl.submit(flowRequestContext,messageContext,xform)" />
+		<transition on="success" to="site.search.summary" />
+		<transition on-exception="th.co.ananta.x.web.base.XException" to="site.search.confirmForm">
+			<evaluate expression="searchCtl.exception(messageContext, flashScope.rootCauseException)" />
+		</transition>
+	</action-state>
+	<view-state id="site.search.summary" view="site.search.summary" model="xform">
+		<transition on="search" to="site.search.end"/>
+		<transition on="history" to="site.search.history"/>
+	</view-state>
+	<end-state id="site.search.end" view="redirect:/search" />
+	<end-state id="site.search.history" view="redirect:/history" />
+</flow>	

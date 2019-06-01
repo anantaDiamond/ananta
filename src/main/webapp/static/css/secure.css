@@ -1,0 +1,963 @@
+.x-btn {
+	height: 38px;
+	background-color: #01A6E6;
+	border-color: #01A6E6;
+	border: 1px solid #998473
+	opacity: 100%;
+}
+.x-btn-white {
+	height: 38px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	border-color: #01A6E6;
+	opacity: 100%;
+	color: #01A6E6;
+}
+.x-btn-brown {
+	height: 38px;
+	background-color: #32271D;
+	border-radius: 4px;
+	border-color: #01A6E6;
+	opacity: 100%;
+	color: #01A6E6;
+}
+.x-btn-footer {
+	height: 38px;
+	background-color: #32271D;
+	border-radius: 4px;
+	border-color: #01A6E6;
+	opacity: 100%;
+	font-size: 20px;
+}
+.x-btn-footer:disabled {
+	height: 38px;
+	background-color: #01A6E6;
+	border-radius: 4px;
+	border-color: #01A6E6;
+	opacity: 0.1;
+}
+.x-btn:disabled {
+	height: 38px;
+	background-color: #01A6E6;
+	border-radius: 4px;
+	border-color: #01A6E6;
+	opacity: 0.2;
+}
+
+.x-btn-green {
+	height: 38px;
+	background-color: #28A745;
+	border-radius: 4px;
+	border-color: #fff;
+	opacity: 100%;
+	color: white;
+}
+
+.x-btn-green:hover {
+	background-color: #1e8435;
+	border-color: #1e8435;
+}
+
+.x-btn-darkred {
+	width: 142px;
+	height: 38px;
+	background-color: #DC3545;
+	border-radius: 4px;
+	border-color: #fff;
+	opacity: 100%;
+	color: white;
+}
+
+.x-btn-darkred:hover {
+	background-color: #a52632;
+	border-color: #a52632;
+}
+
+.x-btn-grey {
+	width: 142px;
+	height: 38px;
+	background-color: #7F8FA4;
+	border-radius: 4px;
+	border-color: #7F8FA4;
+	opacity: 100%;
+}
+.x-btn-grey-footer {
+	width: 142px;
+	height: 38px;
+	background-color: #7F8FA4;
+	border-radius: 4px;
+	border-color: #7F8FA4;
+	opacity: 100%;
+	font-size: 20px;
+}
+
+.x-footer {
+	background-color: rgb(58, 73, 101);
+	opacity: 0.8;
+	height: 70px;
+	margin-top: 20px;
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.new_header {
+    width: 100%;
+    background: rgba(255,255,255,.95);
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding: 10px 15px 15px 10px;
+}
+
+.left_header {
+	width: 40%;
+    float: left;
+    padding: 10px 15px;
+}
+
+.middle_header {
+	width: 20%;
+    float: left;
+    padding: 5px 15px;
+}
+
+body {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #565656;
+	letter-spacing: 0;
+	line-height: 24px;
+}
+
+a, div {
+	font-weight: normal;
+	font-style: normal;
+}
+
+span {
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 40px;
+	color: #212529;
+	letter-spacing: 0;
+}
+
+h2 {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	color: #7698C5 !important;;
+	letter-spacing: 0;
+}
+
+h3 {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 28px;
+	color: #37373C;
+	letter-spacing: 0;
+}
+
+h4 {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	color: #7C6C6C;
+	letter-spacing: 0;
+}
+
+h5 {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 22px;
+	color: #7C6C6C;
+	letter-spacing: 0;
+}
+
+h6 {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 17px;
+	color: #37373C;
+	letter-spacing: 0;
+}
+
+.bg-blue {
+	background-color: #01A6E6 !important;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.navbar-profile {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: right;
+}
+
+.navbar-profile_bold {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 17px;
+	color: #FFFFFF;
+	text-align: right;
+}
+/*--text bold normal----------------------------*/
+.txt-bd-1 {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 44px;
+	letter-spacing: 0;
+}
+
+.txt-bd-2 {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: 0;
+	line-height: 30px;
+}
+
+.txt-bd-3 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+.txt-bd-4 {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 17px;
+	letter-spacing: 0;
+}
+
+.txt-bd-5 {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0;
+}
+
+/*--text bold center----------------------------*/
+.txt-bdc-1 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 44px;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.txt-bdc-2 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: 0;
+	line-height: 30px;
+	text-align: center;
+}
+
+.txt-bdc-3 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.txt-bdc-4 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 17px;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.txt-bdc-5 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+/*--text bold right----------------------------*/
+.txt-bdr-1 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 44px;
+	letter-spacing: 0;
+	text-align: right;
+}
+
+.txt-bdr-2 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: 0;
+	line-height: 30px;
+	text-align: right;
+}
+
+.txt-bdr-3 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+	text-align: right;
+}
+
+.txt-bdr-4 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 17px;
+	letter-spacing: 0;
+	text-align: right;
+}
+
+.txt-bdr-5 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0;
+	text-align: right;
+}
+/*--text bold left----------------------------*/
+.txt-bdl-1 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 44px;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.txt-bdl-2 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: 0;
+	line-height: 30px;
+	text-align: left;
+}
+
+.txt-bdl-3 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.txt-bdl-4 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 17px;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.txt-bdl-5 {
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0;
+	text-align: left;
+}
+/*--text normal--------------------------------------------*/
+.txt-nm-1 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 44px;
+	letter-spacing: 0;
+}
+
+.txt-nm-2 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: 0;
+}
+
+.txt-nm-3 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+.txt-nm-4 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 17px;
+	letter-spacing: 0;
+}
+
+.txt-nm-5 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0;
+}
+/*--text normal right----------------------------*/
+.txt-nmr-1 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 44px;
+	letter-spacing: 0;
+	text-align: right;
+}
+
+.txt-nmr-2 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: 0;
+	text-align: right;
+}
+
+.txt-nmr-3 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+	text-align: right;
+}
+
+.txt-nmr-4 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 17px;
+	letter-spacing: 0;
+	text-align: right;
+}
+
+.txt-nmr-5 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0;
+	text-align: right;
+}
+/*--text normal left----------------------------*/
+.txt-nml-1 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 44px;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.txt-nml-2 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.txt-nml-3 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.txt-nml-4 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 17px;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.txt-nml-5 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+/*--text normal center----------------------------*/
+.txt-nmc-1 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 44px;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.txt-nmc-2 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.txt-nmc-3 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.txt-nmc-4 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 17px;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.txt-nmc-5 {
+	font-family: 'Krungthai Fast';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0;
+	text-align: center;
+}
+/*--text color----------------------------*/
+.txt-blue {
+	color: #4A90E2;
+}
+
+.txt-blue-wink {
+	color: #01A6E6 !important;
+}
+
+.txt-taro {
+	color: #7698C5 !important;
+}
+
+.txt-taro-facial {
+	color: #7F8FA4 !important;
+}
+
+.txt-red {
+	color: red;
+}
+
+.txt-darkred {
+	color: #DC3545;
+}
+
+.txt-green {
+	color: #39B54A;
+}
+.txt-orange {
+	color: #FFC107;
+}
+.txt-white {
+	color: white;
+}
+
+.txt-grey {
+	color: #CED4DA;
+}
+
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.padding-btm-1 {
+	padding-bottom: 10px;
+}
+
+.padding-tp-1 {
+	padding-top: 10px;
+}
+
+.padding-span {
+	margin: 0 !important;
+	padding: 0;
+	padding-top:5px;
+}
+
+/*--background color----------------------------*/
+
+.bg-green {
+	background-color: #ECF7FF;
+}
+.bg-white {
+	background-color: #FFFFFF;
+}
+.bg-red {
+	background-color: #F1FFE3;
+}
+.bg-darkblue {
+	background-color: #3A4965;
+}
+.bg-brown {
+	background-color: #32271D;
+}
+
+.bg-ivory {
+	background-color: #F7F7F6;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+.bdl {
+	border-left: 2px solid #7F8FA4;
+}
+.sp{
+	font-size: 16px;
+	font-weight: bold;
+	color: #7F8FA4; 
+	margin-left: 10px
+}
+.sp-child{
+	font-size: 18px; 
+	color: white; 
+	margin-left: 10px;
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input {
+	font-size: 14px !important;
+}
+
+select {
+	font-size: 14px !important;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.col-form-label {
+	font-size:14px; 
+	color:#7F8FA4;
+	font-weight: bold;
+}
+
+/*--table style----------------------------*/
+.header-bar {
+	color: #7F8FA4; 
+	background-color: #F5F8FA; 
+	width: 1110px; 
+	height: 43px; 
+	border-bottom: 1px solid #E9ECEF;
+	border-top: 1px solid #E9ECEF;
+	font-family: 'Krungthai Fast';
+	font-weight: bold;
+	font-style: normal; 
+	font-size:14px; 
+	margin-bottom: 15px;
+}
+
+/*--create account -----------------------*/
+.service-account-msg {
+	position: absolute;
+	font-size: 1em;
+	color: #3A4965;
+	letter-spacing: 0;
+	margin-left: 1.5em;
+}
+
+.service-account-box input[type="checkbox"] {
+	display: none;
+}
+
+.checkmark-account {
+	display: inline-block;;
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	background-color: #FFFFFF;
+	border-radius: 2px;
+	border-style: inset;
+	border: 1px solid #B8B8B8;
+	margin-top: 0.25em;
+	margin-bottom: 13px;
+}
+
+.checkmark-account-success {
+	display: inline-block;;
+	position: absolute;
+	background-color: #FFFFFF;
+	margin-left: -2px;
+}
+
+
+.service-account-box input[type="checkbox"]:checked ~ .checkmark-account {
+	background-color: #1589FF; 
+	border-style: none;
+}
+
+.checkmark-account:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.service-account-box input[type="checkbox"]:checked ~ .checkmark-account:after {
+	display: block;
+}
+
+.service-account-box .checkmark-account:after {
+	left: 5px;
+	top: 2px;
+	width: 4px;
+	height: 7px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.service-account-box input[type="checkbox"]:disabled ~ .checkmark-account {
+	border: 1px solid #CED4DA;
+}
+
+.service-account-box input[type="checkbox"]:disabled ~ .service-account-msg {
+	color: #CED4DA;
+}
+
+.service-box {
+	position: relative;
+	height: 4em;
+	width: 11.25em; 
+	font-size : 1.25em;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	border-radius: 0.25em;
+	border-style: none; 
+	-webkit-user-select : none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-select: none;
+	font-size: 1.25em;
+}
+
+.service-box input[type="checkbox"] {
+	display: none;
+}
+
+.checkmark {
+	display: inline-block;;
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	background-color: #FFFFFF;
+	border-radius: 2px;
+	border-style: inset;
+	border: 1px solid #B8B8B8;
+	margin-top: 1.1em;
+	margin-left: 0.8em;
+}
+
+.service-box input[type="checkbox"]:checked ~ .checkmark {
+	background-color: #28A745;
+	border-style: none;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.service-box input[type="checkbox"]:checked ~ .checkmark:after {
+	display: block;
+}
+
+.service-box .checkmark:after {
+	left: 7px;
+	top: 2px;
+	width: 7px;
+	height: 12px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.check-msg {
+	position: absolute;
+	display: inline-block;
+	margin-top: 1.025em;
+	margin-left: 2.10em;
+}
+
+.service-box input[type="checkbox"]:disabled ~ .checkmark {
+	border: 1px solid #CED4DA;
+}
+
+.service-box input[type="checkbox"]:disabled ~ .check-msg {
+	color: #CED4DA;
+}
+
+.section-header-title {
+	color:#7F8FA4;
+	margin-left:43px;
+	font-weight: bold;
+}
+
+.account-input {
+	width:262px;
+	height: 38px;
+}
+
+.account-span {
+	padding-top:5px;
+}
+
+.required-field {
+	color:#DC3545; 
+	font-size:16px;
+}
+
+
+.section-divided {
+	margin:-8px 43px 24px 43px;
+	border:1px solid #E9ECEF;
+}
+
+.createBtn {
+	border-color: #01A6E6;
+	color: #01A6E6;
+	background-color: #FFFFFF;
+	width: 96px;
+	height: 31px;
+	font-size: 14px;
+}
+
+.catalogueBtn {
+	border-color: #01A6E6;
+	color: #01A6E6;
+	width: 96px;
+	height: 31px;
+	font-size: 14px;
+}
+
+.cardBtn {
+	border-color: #01A6E6;
+	color: #FFFFFF;
+	background-color: #01A6E6;
+	width: 96px;
+	height: 31px;
+	font-size: 14px;
+}
+
+.netbank-icon {
+	position: absolute;
+	width: 1.25em;
+	height: 1.79em;
+	margin-top: 0.8em;
+	margin-left: 10em;
+}
+
+.smsalert-icon {
+	position: absolute;
+	width: 1.6em;
+	height: 1.5em;
+	margin-top: 0.9em;
+	margin-left: 7em;
+}
+
+/*------------------------------*/
+.divider {
+    width: 100%;
+    left: 0%;
+	border-top:1px solid #E9ECEF;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.border-bottom {
+    height:30px;
+}
+/*-----------------------------*/
+.img-cust {
+	border : 1px solid #ddd;
+}
+.img-cust:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*---------signature--------------*/
+.signatureBox {
+	border-style: dashed;
+	border-radius: 5px;
+	border-color: #DFDFDF;
+}
+
+.signature {
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 10px 0;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	float: none;
+}

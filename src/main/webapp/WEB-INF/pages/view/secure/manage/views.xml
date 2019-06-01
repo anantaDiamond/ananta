@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="site.manage.list" extends="secure">
+		<put-attribute name="title" value="app.homepage.title" />
+		<put-attribute name="body" value="/WEB-INF/pages/view/secure/manage/list.jsp" />
+	</definition>
+	<definition name="site.manage.detail" extends="secure">
+		<put-attribute name="title" value="app.homepage.title" />
+		<put-attribute name="body" value="/WEB-INF/pages/view/secure/manage/detail.jsp" />
+	</definition>
+	<definition name="site.manage.emailForm" extends="secure">
+		<put-attribute name="title" value="app.homepage.title" />
+		<put-attribute name="body" value="/WEB-INF/pages/view/secure/manage/emailForm.jsp" />
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,24 @@
+version: '2'
+services:
+ ananta-web:
+  image: siriphatakrudkaew/anantax:1.0.0.12
+  restart: always
+  container_name: ananta_web
+  ports:
+   - 8888:8080
+  environment:
+   - DB_URL=jdbc:mysql://ananta_db:3306/ananta
+   - DB_USER=root
+   - DB_PASS=abc123
+   - SERVER_SERVLET_CONTEXT_PATH=/ananta
+   - JAVA_OPTS=-Duser.region=th -Duser.language=th -Duser.country=th
+ ananta-db:
+  image: mysql
+  restart: always
+  container_name: ananta_db
+  command: mysqld --user=root --verbose
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_DATABASE: "ananta"
+    MYSQL_ROOT_PASSWORD: "abc123"
