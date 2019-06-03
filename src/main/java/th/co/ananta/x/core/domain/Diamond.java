@@ -20,6 +20,7 @@ public class Diamond implements Serializable{
 	private String size;
 	private String supplier;
 	private String lotLocation;
+	private String keyToSymbols;
 	private String phone;
 	@DateTimeFormat(pattern = Constant.FORMAT_DATE)
 	private String updatedTime;
@@ -96,6 +97,12 @@ public class Diamond implements Serializable{
 	}
 	public void setLotLocation(String lotLocation) {
 		this.lotLocation = lotLocation;
+	}
+	public String getKeyToSymbols() {
+		return keyToSymbols;
+	}
+	public void setKeyToSymbols(String keyToSymbols) {
+		this.keyToSymbols = keyToSymbols;
 	}
 	public String getPhone() {
 		return phone;

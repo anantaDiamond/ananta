@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import th.co.ananta.x.core.domain.Agent;
 import th.co.ananta.x.core.domain.Diamond;
 import th.co.ananta.x.core.repo.IDiamondInfoRepository;
-import th.co.ananta.x.prov.host.XSQL;
+import th.co.ananta.x.prov.host.MSSQL;
 import th.co.ananta.x.web.base.XException;
 
 public class DiamondInfoRepository implements IDiamondInfoRepository {
@@ -21,14 +21,15 @@ public class DiamondInfoRepository implements IDiamondInfoRepository {
 	public List<Diamond> getByCaratColorClarity(Agent agent, String maxCarat, String minCarat, String[] colors, String[] clarities) throws XException {
 		log.info("getByCaratColorClarity: max carat="+maxCarat+",min carat="+minCarat);
 		// TODO Auto-generated method stub
-		XSQL xSQL = null;
+		MSSQL xSQL = null;
 		ResultSet rs = null;
 		List<Diamond> list = new ArrayList<Diamond>();
 		int index = 1;
 
 		try {
 			List<String> whereClauseList = new ArrayList<String>();
-			StringBuffer query = new StringBuffer("SELECT DIAMONDID, SHAPE, COLOR, CLARITY, CERTNUM, SIZE, TOTALSALESPRICE, SUPPLIER, LOTLOCATION, UPDATED, date(Updated) AS UPDATEDATE FROM DTBL_DIAMOND WHERE ");
+//			StringBuffer query = new StringBuffer("SELECT DIAMONDID, SHAPE, COLOR, CLARITY, CERTNUM, SIZE, TOTALSALESPRICE, SUPPLIER, LOTLOCATION, UPDATED, date(Updated) AS UPDATEDATE) FROM DTBL_DIAMOND WHERE ");
+			StringBuffer query = new StringBuffer("SELECT TOP 5 DIAMONDID, SHAPE, COLOR, CLARITY, CERTNUM, SIZE, TOTALSALESPRICE, SUPPLIER, LOTLOCATION, KEYTOSYMBOLS, UPDATED FROM diamond WHERE ");
 			if (!StringUtils.isBlank(minCarat)) {
 				query.append("SIZE >= ? AND ");
 				whereClauseList.add(minCarat);
@@ -56,8 +57,9 @@ public class DiamondInfoRepository implements IDiamondInfoRepository {
 				query.append(") AND ");
 			}
 			query = new StringBuffer(query.substring(0, query.length() - 5));
-			query.append("ORDER BY UPDATEDATE DESC, TOTALSALESPRICE ASC LIMIT 5");
-			xSQL = new XSQL(query.toString());
+//			query.append("ORDER BY UPDATEDATE DESC, TOTALSALESPRICE ASC LIMIT 5");
+			query.append("ORDER BY UPDATE DESC, TOTALSALESPRICE ASC");
+			xSQL = new MSSQL(query.toString());
 			for (int i = 0; i < whereClauseList.size(); ++i) {
 				xSQL.setString(i + 1, whereClauseList.get(i));
 			}
@@ -74,6 +76,7 @@ public class DiamondInfoRepository implements IDiamondInfoRepository {
 				diamond.setCost(rs.getBigDecimal("TOTALSALESPRICE"));
 				diamond.setSupplier(rs.getString("SUPPLIER"));
 				diamond.setLotLocation(rs.getString("LOTLOCATION"));
+				diamond.setKeyToSymbols(rs.getString("KEYTOSYMBOLS"));
 				//diamond.setPhone(rs.getString("PHONE"));
 				list.add(diamond);
 			}

@@ -60,7 +60,7 @@ public class CustomerOrderRepository implements ICustomerOrderRepository {
 								: null);
 				xSQL.setString(19, obj.getStatus());
 				xSQL.setString(20, order.getDiamond().getSupplier());
-				xSQL.setString(21, order.getDiamond().getPhone());
+//				xSQL.setString(21, order.getDiamond().getPhone());
 				xSQL.setString(22, order.getDiamond().getLotLocation());
 				xSQL.setString(23,
 						null != order.getDiamond().getCost() ? order.getDiamond().getCost().toString() : null);
@@ -110,7 +110,7 @@ public class CustomerOrderRepository implements ICustomerOrderRepository {
 				d.setSize(rs.getString("SIZ"));
 				d.setShape(rs.getString("SHAPE"));
 				d.setSupplier(rs.getString("SUPPLIER"));
-				d.setPhone(rs.getString("SUPPHONE"));
+//				d.setPhone(rs.getString("SUPPHONE"));
 				d.setLotLocation(rs.getString("SUPLOC"));
 				d.setCost(new BigDecimal(rs.getString("COST")));
 				d.setId(rs.getString("DIAMONDID"));
@@ -178,7 +178,7 @@ public class CustomerOrderRepository implements ICustomerOrderRepository {
 					d.setSize(rs.getString("SIZ"));
 					d.setShape(rs.getString("SHAPE"));
 					d.setSupplier(rs.getString("SUPPLIER"));
-					d.setPhone(rs.getString("SUPPHONE"));
+//					d.setPhone(rs.getString("SUPPHONE"));
 					d.setLotLocation(rs.getString("SUPLOC"));
 					d.setCost(new BigDecimal(rs.getString("COST")));
 					d.setId(rs.getString("DIAMONDID"));

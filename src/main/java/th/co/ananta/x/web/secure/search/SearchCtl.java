@@ -108,7 +108,7 @@ public class SearchCtl extends Secure {
 						d.setSize(dm.getSize());
 						d.setSupplier(dm.getSupplier());
 						d.setLotLocation(dm.getLotLocation());
-						d.setPhone(dm.getPhone());
+						d.setKeyToSymbols(dm.getKeyToSymbols());
 						d.setCost(dm.getCost());
 						od.setPrice(dm.getPrice());
 					}
